@@ -44,6 +44,20 @@ p {
     z-index: 1000;
 }
 
+.header.fixed {
+    height: auto;
+    position: fixed;
+    background-color: #2a2e48;
+
+}
+
+.header.fixed .header__inner {
+    border-bottom: none;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    
+}
+
 .header__inner {
     padding: 38px 0;
     display: flex;
@@ -583,6 +597,19 @@ p {
     /*  Nav  */
     .nav {
         display: none;
+        width: 100%;
+        text-align: right;
+        
+        background-color: #31344e;
+        
+        position: absolute;
+        right: 0;
+        top: 100%;
+        flex-direction: column;
+    }
+    
+    .nav_link {
+        padding: 9px 15px
     }
     
     /*  Burger  */
@@ -618,16 +645,15 @@ p {
     
     /*  Opinion  */
     .opinion__photo {
-        width: 100%;
+        min-width: 991px;
         overflow: hidden;
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin: 15px 0 40px; 
     }
     
-    .opinion__text {
+    .opinion__content {
         width: 100%;
         padding-left: 0;
-        padding-bottom: 15px;
+        padding-bottom: 40px;
     }
 }
 
@@ -677,21 +703,48 @@ p {
     .team__item {
         width: 100%;
     }
+
+    /*  Opinion  */
+    .opinion__text {
+        font-size: 25px;
+    }
+    
+    /*  Button  */
+    .btn--long {
+        min-width: 260px;
+    }
+
+    /*  Download  */
+    .download {
+        margin: 50px 0;
+    }
+    
+    .download__title {
+        font-size: 24px;
+        line-height: 1;
+    }
+    
+    /*  Footer  */
+    .footer__block {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .footer__block:last-child {
+        margin-bottom: 0;
+    }
+    
+    .footer__inner {
+        padding: 30px 0;
+    }
 }
 
+@media (max-width: 414px) {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /*  Opinion  */
+    .opinion__photo {
+        right: -100px;
+    }
+}

@@ -8,6 +8,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../css/style.css">
+        
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>
     </head>
     <body>
         
@@ -42,20 +44,20 @@
         </svg>
         
         <!--  Header  -->
-        <header class="header">
+        <header class="header" id="header">
             <div class="container">
                 <div class="header__inner">
-                    <div class="header__logo">
+                    <a class="header__logo" href="#">
                         <img src="../img/ActiveBox.logo.png">
-                    </div>
-                    <nav class="nav">
-                        <a class="nav_link" href="#">Features</a>
-                        <a class="nav_link" href="#">Works</a>
-                        <a class="nav_link" href="#">Team</a>
-                        <a class="nav_link" href="#">Testimonials</a>
-                        <a class="nav_link" href="#">Download</a>
+                    </a>
+                    <nav class="nav" id="nav">
+                        <a class="nav_link" href="#" data-scroll="#features">Features</a>
+                        <a class="nav_link" href="#" data-scroll="#works">Works</a>
+                        <a class="nav_link" href="#" data-scroll="#team">Team</a>
+                        <a class="nav_link" href="#" data-scroll="#opinion">Testimonials</a>
+                        <a class="nav_link" href="#" data-scroll="#download">Download</a>
                     </nav>
-                    <button class="burger" type="button">
+                    <button class="burger" type="button" id="navToggle">
                         <span class="burger__item">Menu</span>
                     </button>
                 </div>
@@ -75,7 +77,7 @@
         </div>  <!--  ./intro  -->
         
         <!--  Features  -->
-        <div class="container">
+        <div class="container" id="features">
             <div class="features">
                 <div class="features__item">
                     <img class="features__icon" src="../img/features/features_1.png" alt="">
@@ -135,7 +137,7 @@
         </div> <!--  ./features/container  -->
         
         <!--  Works  -->
-        <div class="works">
+        <div class="works" id="works">
             <div class="works__item">
                 <img class="works__img" src="../img/works/work_1.jpg" alt="">
                 <div class="works__content">
@@ -227,7 +229,7 @@
         </div> <!--  ./works  -->
         
         <!--  Team  -->
-        <div class="team">
+        <div class="team" id="team">
             <div class="container">
                 <div class="team__inner">
                     <div class="team__item">
@@ -371,7 +373,7 @@
         </div> <!--  ./team  -->
         
         <!--  Opinion  -->
-        <div class="opinion">
+        <div class="opinion" id="opinion">
             <div class="container">
                 <div class="opinion__item">
                     <div class="opinion__photo">
@@ -390,7 +392,7 @@
         </div> <!--  opinion  -->
         
         <!--  Download  -->
-        <div class="download">
+        <div class="download" id="download">
             <div class="container">
                 <h3 class="download__title">
                     Are You Ready to Start? Download Now For Free!
@@ -466,24 +468,8 @@
                 </div>
             </div>
         </div> <!--  ./footer-->
+        
+        <!--  Javascript  -->
+        <script src="../js/app.js"></script>
     </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
