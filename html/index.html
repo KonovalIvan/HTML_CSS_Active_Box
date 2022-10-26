@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>ActiveBox</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -65,7 +67,7 @@
         </header>
         
         <!--  Intro  -->
-        <div class="intro">
+        <div class="intro" id="intro">
             <div class="container">
                 <div class="intro__inner">
                     <h1 class="intro__title">Your Favorite One Page<br>
@@ -375,18 +377,39 @@
         <!--  Opinion  -->
         <div class="opinion" id="opinion">
             <div class="container">
-                <div class="opinion__item">
-                    <div class="opinion__photo">
-                        <img class="opinion__img" src="../img/oppinions/oppinion_1.jpg" alt="">
+                <div class="opinion__slider"id="opinionSlider">
+                    <div>
+                        <div class="opinion__item">
+                            <div class="opinion__photo">
+                                <img class="opinion__img" src="../img/oppinions/oppinion_1.jpg" alt="">
+                            </div>
+                            <div class="opinion__content">
+                                <div class="opinion__text">
+                                    “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+                                </div>
+                                <div class="opinion__author">
+                                    Susan Sims, Interaction Designer at XYZ
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="opinion__content">
-                        <div class="opinion__text">
-                            “Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”
+                        
+                    <div>
+                        <div class="opinion__item">
+                            <div class="opinion__photo">
+                                <img class="opinion__img" src="../img/oppinions/oppinion_2.jpg" alt="">
+                            </div>
+                            <div class="opinion__content">
+                                <div class="opinion__text">
+                                    “The novel Negri 5 Menara written by Ahmad Fuadi’s which was a best seller told the story of five friends that lived in a Islamic boarding school that was Pondok Madani.”
+                                </div>
+                                <div class="opinion__author">
+                                    John Week, Programmer at XYZ
+                                </div>
+                            </div>
                         </div>
-                        <div class="opinion__author">
-                            Susan Sims, Interaction Designer at XYZ
-                        </div>
-                    </div> 
+                    </div>
+                    
                 </div>
             </div> <!--  container  -->
         </div> <!--  opinion  -->
@@ -470,6 +493,7 @@
         </div> <!--  ./footer-->
         
         <!--  Javascript  -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="../js/app.js"></script>
     </body>
 </html>

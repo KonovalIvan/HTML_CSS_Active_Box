@@ -2,9 +2,11 @@ $(function () {
     
     /*  Fixed__header  */
     let header = $("#header");
-    let intro_h = intro.height();
     let intro = $("#intro");
+    let intro_h = intro.innerHeight();
     let scroll_position = $(window).scrollTop();
+    let nav = $("#nav")
+    let navToggle = $("#navToggle")
     
     checkScroll(scroll_position, intro_h);
     
@@ -34,7 +36,7 @@ $(function () {
         
         let element_id = $(this).data('scroll');
         let element_offset = $(element_id).offset().top;
-        console.log(element_offset);
+        nav.removeClass("show");
         
         $("html, body").animate({
             
@@ -43,14 +45,24 @@ $(function () {
         }, 600);
     });
     
-    /*  nav Toggle  */
-    let nav = $("#nav")
-    let navToggle = $("#navToggle")
+    /*  nav Toggle  */    
     $("#navToggle").on("click", function(event) {
         
         event.preventDefault();
-        
+        nav.toggleClass("show");
         
     });
 
+    /*  Reviews  */
+    let slider = $("#opinionSlider");
+    
+    slider.slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      fade: true,
+      arrows:  false,
+      dots: true
+    }); 
+    
 });
