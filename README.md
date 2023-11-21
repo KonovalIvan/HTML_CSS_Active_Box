@@ -3,4 +3,4 @@ Next i want create project in DJango and adding backend to this page like sendin
 
 My finaly target it write web-page for building company, adding some information and write powerful calculator for developer.
 
-![ab](https://github.com/KonovalIvan/HTML_CSS_Active_Box/assets/107881716/1f0f9478-7f4e-4115-8586-e4883132e079)
+![ab](https://github.com/KonovalIvan/HTML_CSS_Active_Box/assets/107881716/4637d2ed-f8ad-4475-96d4-460fffedb38a)
